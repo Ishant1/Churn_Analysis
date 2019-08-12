@@ -50,6 +50,7 @@ evaluator.evaluate_and_score(X_num_Test_c,y_test)
 ```
 Then these metrics can be compared with a precision-recall curve which can be obtained through **evaluator.plot_results()** looks like below
 
+![Precision-Recall Curve!](/churn/P_R_curve.png "Precision-Recall Curve")
 
 ---
 
