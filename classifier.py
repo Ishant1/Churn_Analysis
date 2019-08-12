@@ -33,7 +33,7 @@ except ImportError:
 '''
 # =====================================================================
 
-file_path = "telco-customer.csv"
+file_path = "Data/telco-customer.csv"
 
 def download_data():
 

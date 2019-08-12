@@ -32,7 +32,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="telco-customer.csv" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="churn\">
