@@ -7,6 +7,7 @@ from sklearn.model_selection import GridSearchCV
 
 
 
+# Helper class to evaluate multiple classes togather and function to compare them and also choose best prarameters for each
 
 class evaluate_classifier(BaseEstimator,TransformerMixin):
 
@@ -19,14 +20,14 @@ class evaluate_classifier(BaseEstimator,TransformerMixin):
 
         self.parameteres = parameters
 
+        #All the results and models will be stored in variable below
         self.result = {}
 
     
-    # Here we create classifiers with default parameters. These need
-    # to be adjusted to obtain optimal performance on your data set.
     
-    # Test the linear support vector classifier
-
+    
+    
+    #Fits the models given as a list and also searches best parameters for each through GridSeach
     def fit(self,X_train,y_train,cv_=5):
         #looping through all the models in the list
         for model in self.models:
@@ -50,6 +51,7 @@ class evaluate_classifier(BaseEstimator,TransformerMixin):
 
                 print('Fitted {}'.format(model_name))
 
+    #Uses all the fitted models from before and create different metrics with test data for cmoparision 
     def evaluate_and_score(self, X_test, y_test):
         for model_name in self.model_names:
             model = self.result[model_name]['model']
@@ -68,6 +70,7 @@ class evaluate_classifier(BaseEstimator,TransformerMixin):
                                             'precision':precision,
                                             'recall':recall})
 
+    #Helper function to plot the results from all models on a single graph
     def plot_results(self):
         fig = plt.figure(figsize=(6, 6))
 
@@ -88,6 +91,8 @@ class evaluate_classifier(BaseEstimator,TransformerMixin):
 
         plt.close()
 
+    
+    #Outputs the respective metrics of each model in a table for easy comparision
     def results(self):
 
         ouput = []
