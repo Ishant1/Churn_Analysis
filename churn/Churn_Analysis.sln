@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Churn_Analysis", "..\Churn_Analysis.pyproj", "{AE370B64-B9EA-4A2C-944D-5766B6300BAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE370B64-B9EA-4A2C-944D-5766B6300BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE370B64-B9EA-4A2C-944D-5766B6300BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BB84D2F-8071-4A01-8A2D-E70AD69DFB86}
+	EndGlobalSection
+EndGlobal
